@@ -1,0 +1,15 @@
+.forgotPassword-page {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 22px;
+  /* margin-top: -70px; */
+  background: url(../../Assets/images/login-bg.jpg) no-repeat center/cover;
+}
+
+.error-msg {
+  color: red;
+}

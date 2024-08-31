@@ -1,0 +1,552 @@
+.profile-top {
+  /* width: 100%; */
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Toastify__toast-container {
+  z-index: 200000;
+  }
+
+.profile-top .heading h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #574e49;
+  padding-bottom: 10px;
+}
+
+.profile-top .heading ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.profile-top .heading ul li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #574e49;
+}
+
+.profile-top .heading ul li strong {
+  font-weight: 600;
+}
+
+.profile-top .links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid #16584066;
+}
+
+.profile-top .links ul li {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #165840;
+}
+
+.profile-top .links ul li a {
+  color: #165840;
+  padding: 10px 0;
+  display: block;
+  background-position: bottom;
+}
+
+.profile-top .links ul li a.active {
+  background: url(../../Assets/images/union.png) no-repeat bottom;
+}
+
+.profile-tabs {
+  max-width: 99vw;
+  padding: 0 25px;
+}
+
+.profile-filter-list-grid {
+  padding: 25px 25px 5px 25px;
+}
+
+.profile-filter-list-grid select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #ffffff url(../../Assets/images/dd-arrow.png) no-repeat right;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #adbc92;
+  border-radius: 8px;
+  width: auto;
+  min-width: 200px;
+  display: block;
+  color: #574e49;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.profile-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  column-gap: 30px;
+  padding: 0 25px 25px;
+}
+
+.profile-content-list {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  column-gap: 30px;
+  padding: 0 25px 25px;
+}
+
+.PTab{
+  width: 100%;
+  display: none;
+  padding: 25px;
+}
+.PTab.active{
+  display: block;
+}
+.profileHeadOuter{
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+.profileHeadOuter .editpen-btn{
+  margin-left: 15px;
+}
+
+.profileHeadInner{
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: start;
+  justify-content: center;
+  width: 50%;
+}
+.PTab h2{
+  font-size: 1.5rem;
+}
+.PTab.PreferenceTab h2,
+.PTab.SubscriptionTab h2{
+  margin: 30px 0;
+}
+.profileLeft{
+  width:100%;
+  text-align: center;
+}
+.profileImgSection{
+  margin-right: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.profileImgContainer{
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.profileImgInner{
+  border-radius: 50%;
+  border: 1px solid rgb(94, 195, 202);
+  height: 200px;
+  width: 200px;
+  left: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+.profileImgOverlay{
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: inqqRh;
+  animation-timing-function: linear;
+  background: rgb(241, 241, 241) linear-gradient(120deg, rgb(241, 241, 241) 30%, rgba(255, 255, 255, 0.89) 50%, rgb(241, 241, 241) 65%) 0% 0% / 100% 100% no-repeat;
+  height: 100%;
+  position: absolute;
+  inset: 0px;
+  z-index: 0;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 500ms ease 0s;
+}
+
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-text  {
+  width: 120px;
+}
+
+.updateProfilebtn{
+  padding: 10px 16px;
+  background-color: rgba(22, 88, 64, 0.15);
+  border-radius: 5px;
+  color: #165840;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35px;
+  border: none;
+}
+.updateProfilebtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 2px 4px 7px;
+  transition: all 200ms ease 0s;
+}
+.uname{
+  font-size: 21px;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 200;
+  color: black;
+  padding-left: 10px;
+}
+.bio{
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+  line-height: 25px;
+  white-space: pre-line;
+  cursor: pointer;
+  min-height: 20px;
+  color: rgb(176, 176, 176);
+}
+
+.PinAddressSec{
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 1.7;
+}
+.PinAddress{
+  font-size: 15px;
+  padding-left: 8px;
+  font-size: 15px;
+  color: rgb(102, 102, 102);
+}
+.locationPin{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.profileAccountSec{
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-right: 0px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.accSec {
+  width: 100%;
+  height: 100%;
+}
+.accRow{
+  display: flex;
+  flex-direction: row;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -moz-box-align: center;
+  align-items: center;
+  border-bottom: 0.05rem solid rgb(224, 224, 224);
+  height: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  position: relative;
+  transition: all 200ms ease 0s;
+  cursor: auto;
+  color: #fff;
+}
+.addressInputBox{
+  height: auto;
+  min-height: 50px;
+}
+.addressInputInnerBox{
+  padding-right: 8px;
+}
+.evevep {
+  display: flex;
+  flex-direction: row;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  -moz-box-align: center;
+  align-items: center;
+}
+.row-title { 
+  font-size: 15px; 
+  text-transform: capitalize;
+  color: black;
+  min-width:110px;
+}
+.row-email {
+  font-size: 1.04em;
+  color: rgb(176, 176, 176);
+  text-transform: lowercase;
+  word-break: break-all;
+}
+.row-value {
+  text-transform: capitalize;
+  /* position: absolute; */
+  left: 300px;
+  font-size: 1.04em;
+  color: rgb(28, 28, 28);
+}
+.editpen-btn{
+  border-style: none;
+  padding: 0;
+  background: #FFF;
+  cursor: pointer;
+  min-width: 16px;
+}
+.profileButtonSec{
+  display: flex;
+  align-items: center;
+}
+.redBtn {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.03) 2px 4px 7px;
+  background-color: rgb(223, 111, 111);
+  transition: all 500ms ease 0s;
+  width: 143px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: transparent;
+  font-size: 14px;
+  height: 41px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.DelAccBtn{
+  background-color: transparent;
+  border: medium;
+  cursor: pointer !important;
+  transition: all 0.1s ease 0s;
+  width: auto;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(94, 195, 202);
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  color: rgb(223, 111, 111);
+}
+input:disabled{
+  background-color: #f0f3ef!important;
+}
+select:disabled{
+  background-color: #f0f3ef!important;
+}
+.pref-row{
+  display: flex;
+  align-items: center;
+  padding-bottom: 7px;
+}
+
+.pref-title{
+  color: black;
+  font-size: 17px;
+  width: 160px;
+}
+.pref-line {
+  height: 30px;
+  width: 1px;
+  background-color: rgb(211, 211, 211);
+  margin-right: 50px;
+}
+.radio-content{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.SubscriptionTab .plan-container .plan-title{
+  color: #000;
+}
+.SubscriptionTab .plan-container .plan-desc{
+  color: #000;
+}
+.SubscriptionTab .plan-bottom{
+  position: relative;
+  margin-top:50px;
+  text-align: center;
+}
+.profileInner{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 760px) {
+  .profile-top {
+    flex-wrap: wrap;
+  }
+
+  .profile-top .heading h2 {
+    font-size: 20px;
+  }
+
+  .profile-top .heading ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .profile-top .heading ul li {
+    font-size: 16px;
+  }
+
+  .profile-top .links ul li {
+    font-size: 20px;
+  }
+
+  .profile-content {
+    columns: 1 200px;
+  }
+  .profileHeadInner{
+    width: 100%;
+  }
+  .profileInner{
+    display: block;
+  }
+
+  .details-box .top-box h4 {
+    font-size: 16px;
+  }
+
+  .details-box .top-box p a {
+    font-size: 14px;
+  }
+
+  .details-box .grey-box ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .details-box .input-box {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .details-box .input-box .field25 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .details-box .input-box .field50 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .details-box .reminder-box h5 {
+    font-size: 16px;
+  }
+
+  .details-box .reminder-box ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .accRow{
+    padding: 0;
+  }
+  .row-email, .row-value{
+    position: relative;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .profileImgSection{
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .updateProfilebtn{
+    display: initial;
+    margin-left: 0px !important;
+  }
+  .profileNameSection{
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 761px) and (max-width: 1250px) {
+  .details-box .input-box {
+    flex-wrap: wrap;
+  }
+
+  .details-box .input-box .field25 {
+    flex: 48%;
+    max-width: 48%;
+  }
+
+  .details-box .input-box .field50 {
+    flex: 48%;
+    max-width: 48%;
+  }
+
+  .details-box .grey-box ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .details-box .reminder-box ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-title {
+  min-width: 120px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .profile-top{
+    padding: 25px;
+  }
+  .row-title {
+    min-width: 290px;
+    }
+}

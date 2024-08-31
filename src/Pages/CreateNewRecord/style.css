@@ -1,0 +1,314 @@
+.create-record {
+    padding: 50px 0;
+}
+
+.create-record h2 {
+    font-size: 25px;
+    color: #574E49;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.create-record h2:after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    bottom: 0;
+    height: 1px;
+    background-color: #165840;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.create-record .detail-icon-card-content p {
+    font-size: 20px;
+    color: #28221F;
+    font-weight: 500;
+    margin: 0;
+}
+
+.create-record .detail-icon-card-item {
+    align-items: center;
+    text-decoration: none;
+}
+
+.create-record .detail-icon-card-icon {
+    width: 60px;
+}
+
+.create-record .detail-icon-card-content {
+    width: calc(100% - 60px);
+}
+
+@media(min-width: 768px) {
+    .create-record .detail-icon-card-item {
+        width: calc(50% - 20px);
+        margin: 20px 10px 0;
+        padding: 14px 18px;
+    }
+
+    .create-record .detail-icon-card-item:last-child {
+        width: calc(50% - 20px);
+        margin: 20px 10px 0;
+    }
+
+    .create-record .detail-icon-card-list {
+        justify-content: flex-start;
+    }
+}
+
+@media(min-width: 1200px) {
+    .create-record .detail-icon-card-item {
+        width: calc(25% - 26px);
+        margin: 25px 13px 0;
+    }
+
+    .create-record .detail-icon-card-item:last-child {
+        width: calc(25% - 26px);
+        margin: 25px 13px 0;
+    }
+
+    .create-record h2 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .create-record .detail-icon-card-list {
+        width: calc(100% + 26px);
+        margin: 0 -13px;
+    }
+
+    .create-record {
+        padding: 50px 0 100px;
+    }
+
+    .create-record .detail-icon-card-item:hover {
+        background: #f5f5f5;
+    }
+}
+
+.grey-section {
+    background-color: #F0F3EF;
+    min-height: 70px;
+    padding: 15px;
+    margin: -15px -15px 25px -15px;
+}
+
+.grey-section input[type=text],
+.grey-section input[type=date],
+.grey-section select {
+    padding: 7px 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #ADBC92;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    color: #55625D;
+    font-size: 16px;
+}
+
+
+.form-check-input {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+    border-color: #165840 !important;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+}
+
+.form-check-input:checked {
+    background-color: #165840;
+    border-color: #165840;
+}
+
+[aria-hidden="true"] {
+    display: none;
+}
+
+.mt15 {
+    margin-top: 18px;
+}
+
+.pop-form .fa-minus {
+    font-size: 30px;
+    color: #CC4253;
+    margin-top: 15px;
+}
+
+.btn-reminder {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    padding: 13px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background-color: #F0F3EF !important;
+    border: 1px solid #ADBC92 !important;
+    border-radius: 10px !important;
+    margin-bottom: 30px;
+}
+
+.btn-reminder span {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: #5A5A75 !important;
+}
+
+.btn-add {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center !important;
+    padding: 13px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background-color: #F0F3EF !important;
+    border: 1px solid #ADBC92 !important;
+    border-radius: 10px !important;
+}
+
+.btn-minus {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center !important;
+    padding: 13px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background-color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 0px !important;
+    min-height: 58px;
+}
+
+.mb27 {
+    margin-bottom: 27px;
+}
+
+ul.notecard-type {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+ul.notecard-type li button.active{border: 3px solid #d70000 !important;}
+
+ul.notecard-type li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #F0F3EF !important;
+    border: 1px solid #ADBC92 !important;
+    border-radius: 5px !important;
+}
+
+ 
+.simple-row,
+.detailed-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.simple-row .checkbox,
+.detailed-row .checkbox {
+    width: 30px;
+}
+
+.simple-row .delete,
+.detailed-row .delete {
+    width: 50px;
+}
+
+.detailed-row .pick{
+    width: 26%;
+}
+.detailed-row .part,
+.detailed-row .source,
+.detailed-row .cost{
+    width: 21%;
+}
+.detailed-row .costUnit{
+    width: 15%;
+}
+.simple-row .pick,
+.simple-row .cost{
+    width: 47%;
+}
+.simple-row .costUnit {
+    width:15%;
+}
+
+@media only screen and (max-width:760px) {
+
+    .simple-row,
+    .detailed-row {
+        flex-wrap: wrap;
+        gap: 0px;
+        position: relative;
+    }
+
+    .simple-row .checkbox,
+    .detailed-row .checkbox {
+        width: 30px;
+        margin-bottom: 20px;
+    }
+
+    .simple-row .delete,
+    .detailed-row .delete {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .detailed-row .pick,
+    .detailed-row .part,
+    .detailed-row .source{
+        width: 100%;
+    }
+    .detailed-row .cost,
+    .detailed-row .costUnit {
+        width: 50%;
+    }
+
+    .simple-row .pick {
+        width: 100%;
+    }
+    .simple-row .cost,
+    .simple-row .costUnit {
+        width: 50%;
+    }
+
+    ul.notecard-type {
+        margin: 0 0 30px 0;
+    }
+
+    .grey-section [class*="col-"] {
+        padding: 5px 15px;
+    }
+    .repeat-check{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:761px) and (max-width:1023px) {
+    .modal-dialog {
+        max-width: 700px;
+    }
+}

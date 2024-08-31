@@ -1,0 +1,248 @@
+.register-page {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 22px;
+  background: url(../../Assets/images/register-bg2.jpg) no-repeat center/cover;
+}
+
+.register-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.register-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.62) 0.66%,
+    rgba(0, 0, 0, 0.16) 44.42%,
+    rgba(0, 0, 0, 0.1) 99.33%
+  );
+  /* z-index: 1; */
+}
+
+.register-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 4px 44px rgba(0, 0, 0, 0.12);
+  padding: 25px;
+  background-color: #fff;
+  /* height: 500px; */
+}
+
+.register-box h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  padding-bottom: 18px;
+  line-height: 36px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.google-icon {
+  margin: 0 0 20px;
+}
+
+.google-icon .googlebtn {
+  border-radius: 5px;
+  border: 1px solid #cbd2c9;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.google-icon .googlebtn:hover {
+  background: rgba(225, 225, 225, 0.1);
+}
+
+.google-icon .googlebtn h4 {
+  color: #574e49;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.orw-row {
+  font-weight: 700;
+  color: #55625d;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  position: relative;
+  background: url(../../Assets/images/or-bg.png) no-repeat center center;
+  margin-bottom: 20px;
+}
+
+.register-row {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.register-row:last-child {
+  padding-bottom: 100px;
+}
+
+.register-row span {
+  position: absolute;
+  top: 19px;
+  right: 15px;
+}
+
+.register-row span img {
+  opacity: 0.5;
+}
+
+.register-row label {
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #55625d;
+  background-color: #fff;
+}
+
+.register-row input[type="text"],
+.register-row input[type="password"],
+.register-row input[type="email"] {
+  width: 100%;
+  border: none;
+  border: 0;
+  border: #cbd2c9 1px solid;
+  height: 60px;
+  padding: 24px 42px 6px 15px;
+  border-radius: 5px;
+}
+
+.register-row input[type="text"]::placeholder,
+.register-row input[type="password"]::placeholder,
+.register-row input[type="email"]::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: rgba(40, 34, 31, 0.6);
+  opacity: 100;
+}
+
+.register-row input[type="text"]:focus,
+.register-row input[type="password"]:focus,
+.register-row input[type="email"]:focus {
+  outline: none;
+  border: #cbd2c9 1px solid !important;
+  border-bottom: 2px solid #06523c !important;
+}
+
+.register-row input[type="text"]:focus::placeholder,
+.register-row input[type="password"]:focus::placeholder,
+.register-row input[type="email"]:focus::placeholder {
+  font-weight: 600;
+  color: rgba(40, 34, 31, 0.6);
+  opacity: 100;
+}
+
+.register-row input[type="text"]:focus + span img,
+.register-row input[type="password"]:focus + span img,
+.register-row input[type="email"]:focus + span img {
+  opacity: 100;
+}
+
+.terms-conditions {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #55625d;
+  text-align: center;
+  padding: 10px 0 25px;
+}
+
+.terms-conditions a {
+  font-weight: 600;
+  color: #165840;
+  text-decoration: underline;
+}
+
+.terms-conditions a:hover {
+  text-decoration: none;
+}
+
+.register-box h3.terms-conditions {
+  padding: 25px 0 0px;
+}
+
+.btn-register {
+  border-radius: 4px;
+  background: #165840;
+  box-shadow: 0px 4px 44px 0px rgba(197, 255, 202, 0.1);
+  padding: 14px 35px 12px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.btn-register:hover {
+  opacity: 0.9;
+}
+
+.btn-register-row {
+  text-align: center;
+ 
+}
+
+.error-msg {
+  color: red;
+}
+
+@media (min-width: 1200px) {
+  .register-page {
+    padding: 3% 7% 0 0;
+    padding-bottom: 18px;
+    /* margin-top: -70px; */
+  }
+}
+
+/* Tab view*/
+@media only screen and (min-width: 768px) {
+  .register-box {
+    padding: 31px 25px;
+    width: 50vw;
+  }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1000px) {
+}

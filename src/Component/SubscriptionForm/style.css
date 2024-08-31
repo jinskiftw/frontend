@@ -1,0 +1,201 @@
+.plan-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  
+  }
+  .planbox{
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    align-self: flex-start;
+    display: inline-block;
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+    background-color: #FFF;
+  }
+  .planbox:not(.active):hover{
+   transform: scale(1.05);
+   box-shadow: 10px 15px 25px 0 #0003;
+  }
+  .planbox.active, 
+  .planbox.selected{
+   background-color: #c1dbd3;
+   box-shadow: 10px 15px 25px 0 #0003;
+  }
+  .planbox .box-inner{
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .planbox.active .box-inner,
+  .planbox.selected .box-inner{
+    border: 2px solid #165840;
+   
+  }
+  .plan-title{
+    font-family: Inter,sans-serif !important;
+    font-size: 20px;
+    font-weight:  bold;
+    color: #165840;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .plan-img{
+    width: 200px;
+    padding: 10px 0;
+  }
+  .plan-price{
+    font-family: Inter,sans-serif !important;
+    font-size: 15px;
+    font-weight: bold;
+    color: #165840;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .plan-desc{
+    font-family: Inter,sans-serif !important;
+    font-size: 15px;
+    color: #55625d;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+  .plan-desc strong{
+    font-weight: bold;
+  }
+  .plan-desc ul{
+    margin:0;
+    padding:0;
+  }
+  .plan-desc ul li::before{
+   content: "\2713"; /* Unicode character for check mark */
+      color: green; /* Color of the tick */
+      font-size: 1.2em; /* Adjust the size of the tick */
+      margin-right: 5px;
+  }
+
+  .plan-btn{
+    background-color: #165840;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #165840;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .planbox:not(.active) .plan-btn:hover{
+    background: #063927;
+  }
+  
+  .selectplan{
+    font-size: 18px;
+    color: #165840;
+    text-transform: uppercase;
+  }
+  .selectplan span{
+    font-weight: bold;
+  }
+  .subsbtn{
+    background-color: #165840;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #165840;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    margin-top: 20px;
+
+    display: inline-block;
+  }
+  .subsbtn:hover{
+    background: #063927;
+  }
+.paymentform{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 15px 25px 0 #0003;
+}
+.StripeForm{
+    width: 100%;
+}
+.StripeForm .StripeElement {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.87);
+  padding:16.5px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.23)
+}
+.StripeForm .paymentbtn {
+    width: 100%;
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #05563b;
+    border: 0;
+    padding: 10px;
+}
+.ErrMsg{
+  color: #931F1F;
+}
+.SuccessMsg{
+  color: #04553d;
+}
+.SecureCheckout .securetext{
+    font-size: 12px;
+}
+.SecureCheckout img{
+    width: 100%;
+}
+  .paymentCardSummeryBox{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ZipBox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .CardLabel{
+    color: #A2A2A2;
+    font-family: "Montserrat" !important;
+    font-size: 16px !important;
+    font-style: normal;
+    line-height: 22px !important;
+  }
+  .ZipLabel{
+    color: #A2A2A2;
+    text-align: center;
+    font-family: "Montserrat" !important;
+    font-size: 16px !important;
+    font-style: normal;
+    line-height: 22px !important;
+    margin-right: 30px !important;
+  }
+  @media only screen and (min-width: 768px) {
+    .plan-bottom{
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  }
